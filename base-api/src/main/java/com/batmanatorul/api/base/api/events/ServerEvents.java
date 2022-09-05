@@ -7,7 +7,7 @@ import net.minecraft.server.MinecraftServer;
 public interface ServerEvents {
     EventKey<ServerStarting> SERVER_STARTING = Events.create(ServerStarting.class, serverStartings -> server -> {
         for (ServerStarting serverStarting : serverStartings) {
-            serverStarting.start(server);
+            serverStarting.startServer(server);
         }
     });
 
@@ -36,7 +36,7 @@ public interface ServerEvents {
     });
 
     interface ServerStarting {
-        void start(MinecraftServer server);
+        void startServer(MinecraftServer server);
     }
 
     interface ServerStopping {
