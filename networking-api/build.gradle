@@ -1,0 +1,5 @@
+archivesBaseName = "networking-api"
+
+loom {
+    accessWidenerPath = file("src/main/resources/networking.accesswidener")
+}

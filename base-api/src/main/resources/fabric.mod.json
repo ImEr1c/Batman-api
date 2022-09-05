@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "batman-base-api",
+  "version": "${version}",
+  "name": "Batman Base API",
+  "description": "",
+  "authors": ["Batmanatorul"],
+  "contact": {},
+  "license": "lgpl-3.0",
+  "mixins": [
+    "base.mixins.json"
+  ],
+  "environment": "*",
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "batman-datatracking-api",
+  "version": "${version}",
+  "name": "Batman DataTracking API",
+  "description": "",
+  "authors": ["Batmanatorul"],
+  "contact": {},
+  "license": "lgpl-3.0",
+  "environment": "*",
+  "accessWidener": "datatracking.accesswidener",
+  "entrypoints": {
+    "client": [
+      "com.batmanatorul.api.datatracking.DataTracking"
+    ]
+  },
+  "mixins": [
+    "datatracking.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}

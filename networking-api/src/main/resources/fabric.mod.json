@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "batman-networking-api",
+  "version": "${version}",
+  "name": "Batman Networking API",
+  "description": "",
+  "authors": ["Batmanatorul"],
+  "contact": {},
+  "license": "lgpl-3.0",
+  "environment": "*",
+  "entrypoints": {},
+  "accessWidener": "networking.accesswidener",
+  "mixins": [
+    "networking.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}

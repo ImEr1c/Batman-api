@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "batman-registries-api",
+  "version": "${version}",
+  "name": "Batman Registries API",
+  "description": "",
+  "authors": ["Batmanatorul"],
+  "contact": {},
+  "license": "lgpl-3.0",
+  "environment": "*",
+  "accessWidener": "registries.accesswidener",
+  "mixins": [
+    "registries.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}

@@ -1,0 +1,5 @@
+archivesBaseName = "registries-api"
+
+loom {
+    accessWidenerPath = file("src/main/resources/registries.accessWidener")
+}

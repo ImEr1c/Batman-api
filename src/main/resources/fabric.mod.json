@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "batmanlibs",
+  "version": "${version}",
+
+  "name": "Batman Libs",
+  "description": "Libraries and apis used in my mods",
+  "authors": [
+    "Batmanatorul"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "lgpl-3.0",
+  "icon": "assets/batmanlibs/icon.png",
+
+  "environment": "*",
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.18.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

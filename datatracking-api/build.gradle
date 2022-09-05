@@ -1,0 +1,9 @@
+archivesBaseName = "datatracking-api"
+
+loom {
+    accessWidenerPath = file("src/main/resources/datatracking.accesswidener")
+}
+
+dependencies {
+    modImplementation("blank:networking-api")
+}
