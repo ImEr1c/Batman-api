@@ -13,7 +13,7 @@ public class Events {
 
     public static<T> EventKey<T> create(Class<T> clazz, Function<T[], T> invoker) {
         Objects.requireNonNull(clazz, "Event class can not be null when creating an event key");
-        Objects.requireNonNull(invoker, "Invoker can not be null when creating an event key");
+        Objects.requireNonNull(invoker, "Invoker can not be null when creating an event key ");
 
         IEvent<T> event = new Event<>(clazz, invoker);
         EventKey<T> eventKey = new EventKey<>(clazz);
