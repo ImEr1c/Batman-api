@@ -1,7 +1,7 @@
-package com.batmanatorul.api.base.mixin;
+package com.batmanatorul.api.events.mixin;
 
-import com.batmanatorul.api.base.api.events.ClientEvents;
-import com.batmanatorul.api.base.impl.Events;
+import com.batmanatorul.api.events.api.events.ClientEvents;
+import com.batmanatorul.api.events.impl.Events;
 import net.minecraft.client.MinecraftClient;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

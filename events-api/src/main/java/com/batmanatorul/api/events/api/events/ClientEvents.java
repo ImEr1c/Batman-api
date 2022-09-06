@@ -1,7 +1,7 @@
-package com.batmanatorul.api.base.api.events;
+package com.batmanatorul.api.events.api.events;
 
-import com.batmanatorul.api.base.impl.EventKey;
-import com.batmanatorul.api.base.impl.Events;
+import com.batmanatorul.api.events.impl.EventKey;
+import com.batmanatorul.api.events.impl.Events;
 import net.minecraft.client.MinecraftClient;
 
 public interface ClientEvents {

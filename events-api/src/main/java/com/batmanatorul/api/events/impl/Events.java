@@ -1,6 +1,6 @@
-package com.batmanatorul.api.base.impl;
+package com.batmanatorul.api.events.impl;
 
-import com.batmanatorul.api.base.api.IEvent;
+import com.batmanatorul.api.events.api.IEvent;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,10 +1,8 @@
-package com.batmanatorul.api.base.impl;
+package com.batmanatorul.api.events.impl;
 
-import com.batmanatorul.api.base.api.IEvent;
+import com.batmanatorul.api.events.api.IEvent;
 
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 import java.util.function.Function;
 

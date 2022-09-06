@@ -1,6 +1,4 @@
-package com.batmanatorul.api.base.impl;
-
-import java.util.Objects;
+package com.batmanatorul.api.events.impl;
 
 public class EventKey<T> {
 

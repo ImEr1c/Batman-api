@@ -1,12 +1,11 @@
-package com.batmanatorul.api.base.mixin;
+package com.batmanatorul.api.events.mixin;
 
-import com.batmanatorul.api.base.api.events.ServerEvents;
-import com.batmanatorul.api.base.impl.Events;
+import com.batmanatorul.api.events.api.events.ServerEvents;
+import com.batmanatorul.api.events.impl.Events;
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.function.BooleanSupplier;
