@@ -13,11 +13,11 @@ public class ClientMixin {
 
     @Inject(method = "tick", at = @At("HEAD"))
     public void startTick(CallbackInfo ci) {
-        Events.getInvoker(ClientEvents.START_TICK).tick((MinecraftClient) (Object) this);
+        Events.getInvoker(ClientEvents.START_TICK).startTick((MinecraftClient) (Object) this);
     }
 
     @Inject(method = "tick", at = @At("TAIL"))
     public void endTick(CallbackInfo ci) {
-        Events.getInvoker(ClientEvents.END_TICK).tick((MinecraftClient) (Object) this);
+        Events.getInvoker(ClientEvents.END_TICK).endTick((MinecraftClient) (Object) this);
     }
 }

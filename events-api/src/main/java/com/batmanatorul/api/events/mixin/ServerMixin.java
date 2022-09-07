@@ -15,7 +15,7 @@ public class ServerMixin {
 
     @Inject(method = "runServer", at = @At(value = "INVOKE", target = "Lnet/minecraft/server/MinecraftServer;setupServer()Z"))
     public void beforeStart(CallbackInfo ci) {
-        Events.getInvoker(ServerEvents.SERVER_STARTING).start((MinecraftServer) (Object) this);
+        Events.getInvoker(ServerEvents.SERVER_STARTING).startServer((MinecraftServer) (Object) this);
     }
 
     @Inject(method = "runServer", at = @At(value = "INVOKE", target = "Lnet/minecraft/server/MinecraftServer;setFavicon(Lnet/minecraft/server/ServerMetadata;)V"))
