@@ -11,6 +11,5 @@ pluginManagement {
 
 rootProject.name = "Batman-api"
 include 'events-api'
-include 'datatracking-api'
 include 'networking-api'
 include 'registries-api'

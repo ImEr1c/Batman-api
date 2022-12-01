@@ -55,8 +55,8 @@ public abstract class ClientPlayNetworkHandlerMixin implements PacketSender {
 
 
     @Override
-    public void send(Identifier channelIdentifier, ExtendedPacketByteBuf buf) {
-        CustomPayloadC2SPacket packet = new CustomPayloadC2SPacket(channelIdentifier, buf);
+    public void send(Identifier channelResourceLocation, ExtendedPacketByteBuf buf) {
+        CustomPayloadC2SPacket packet = new CustomPayloadC2SPacket(channelResourceLocation, buf);
         sendPacket(packet);
     }
 }

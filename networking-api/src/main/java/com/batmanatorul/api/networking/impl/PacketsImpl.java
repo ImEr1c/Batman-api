@@ -36,7 +36,7 @@ public class PacketsImpl {
 
     public static void send(Identifier identifier, ExtendedPacketByteBuf buf) {
         Objects.requireNonNull(identifier, "Packet Identifier can not be null when sending a server packet");
-        Objects.requireNonNull(buf, "PacketByteBuf can not be null when sending a server packet");
+        Objects.requireNonNull(buf, "ExtendedPacketByteBuf can not be null when sending a server packet");
 
         ClientPlayNetworkHandler networkHandler = MinecraftClient.getInstance().getNetworkHandler();
 
@@ -48,7 +48,7 @@ public class PacketsImpl {
     public static void send(Identifier identifier, ServerPlayerEntity serverPlayer, ExtendedPacketByteBuf buf) {
         Objects.requireNonNull(identifier, "Packet Identifier can not be null when sending a client packet");
         Objects.requireNonNull(serverPlayer, "ServerPlayer can not be null when sending a client packet");
-        Objects.requireNonNull(buf, "PacketByteBuf can not be null when sending a client packet");
+        Objects.requireNonNull(buf, "ExtendedPacketByteBuf can not be null when sending a client packet");
 
         ServerPlayNetworkHandler networkHandler = serverPlayer.networkHandler;
 

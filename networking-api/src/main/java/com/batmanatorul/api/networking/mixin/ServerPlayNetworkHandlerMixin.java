@@ -23,11 +23,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(ServerPlayNetworkHandler.class)
 public abstract class ServerPlayNetworkHandlerMixin implements PacketSender {
 
-    @Shadow public abstract void sendPacket(Packet<?> packet);
-
     @Shadow public ServerPlayerEntity player;
 
     @Shadow @Final private MinecraftServer server;
+
+    @Shadow public abstract void sendPacket(Packet<?> packet);
 
     @Inject(method = "onCustomPayload", at = @At("HEAD"), cancellable = true)
     public void receive(CustomPayloadC2SPacket packet, CallbackInfo ci) {
@@ -56,8 +56,8 @@ public abstract class ServerPlayNetworkHandlerMixin implements PacketSender {
 
 
     @Override
-    public void send(Identifier channelIdentifier, ExtendedPacketByteBuf buf) {
-        CustomPayloadS2CPacket packet = new CustomPayloadS2CPacket(channelIdentifier, buf);
+    public void send(Identifier resourceLocation, ExtendedPacketByteBuf buf) {
+        CustomPayloadS2CPacket packet = new CustomPayloadS2CPacket(resourceLocation, buf);
         sendPacket(packet);
     }
 }

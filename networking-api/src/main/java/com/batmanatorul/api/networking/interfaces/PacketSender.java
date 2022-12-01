@@ -5,6 +5,6 @@ import net.minecraft.util.Identifier;
 
 public interface PacketSender {
 
-    void send(Identifier channelIdentifier, ExtendedPacketByteBuf buf);
+    void send(Identifier resourceLocation, ExtendedPacketByteBuf buf);
 
 }

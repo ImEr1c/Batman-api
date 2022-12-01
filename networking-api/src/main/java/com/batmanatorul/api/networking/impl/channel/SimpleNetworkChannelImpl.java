@@ -44,7 +44,7 @@ public class SimpleNetworkChannelImpl implements SimpleNetworkChannel {
     public void send(ServerPacket packet) {
         Objects.requireNonNull(packet, "Server Packet can not be null");
 
-        ExtendedPacketByteBuf buf = ExtendedPacketByteBufs.create();
+        ExtendedPacketByteBuf buf = ExtendedPacketByteBuf.create();
         int id = ids.get(packet.getClass());
 
         buf.writeVarInt(id);
@@ -52,7 +52,7 @@ public class SimpleNetworkChannelImpl implements SimpleNetworkChannel {
 
         ClientPlayNetworkHandler networkHandler = MinecraftClient.getInstance().getNetworkHandler();
 
-        Objects.requireNonNull(networkHandler, "Minecraft Client network handler can not be null");
+        Objects.requireNonNull(networkHandler, "Minecraft Client packet listener can not be null");
 
         ((PacketSender) networkHandler).send(identifier, buf);
     }
@@ -61,7 +61,7 @@ public class SimpleNetworkChannelImpl implements SimpleNetworkChannel {
         Objects.requireNonNull(serverPlayer, "Player can not be null");
         Objects.requireNonNull(packet, "Client Packet can not be null");
 
-        ExtendedPacketByteBuf buf = ExtendedPacketByteBufs.create();
+        ExtendedPacketByteBuf buf = ExtendedPacketByteBuf.create();
         int id = ids.get(packet.getClass());
 
         buf.writeVarInt(id);
