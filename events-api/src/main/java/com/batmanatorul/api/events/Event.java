@@ -1,6 +1,4 @@
-package com.batmanatorul.api.events.impl;
-
-import com.batmanatorul.api.events.api.IEvent;
+package com.batmanatorul.api.events;
 
 import java.lang.reflect.Array;
 import java.util.Objects;

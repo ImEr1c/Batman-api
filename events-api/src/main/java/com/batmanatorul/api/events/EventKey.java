@@ -1,4 +1,4 @@
-package com.batmanatorul.api.events.impl;
+package com.batmanatorul.api.events;
 
 public class EventKey<T> {
 

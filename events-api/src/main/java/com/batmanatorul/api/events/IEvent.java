@@ -1,4 +1,4 @@
-package com.batmanatorul.api.events.api;
+package com.batmanatorul.api.events;
 
 public interface IEvent<T> {
     void register(T listener);

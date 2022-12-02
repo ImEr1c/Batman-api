@@ -1,14 +1,13 @@
 {
   "schemaVersion": 1,
-  "id": "batman-events-api",
+  "id": "batman-util-api",
   "version": "${version}",
-  "name": "Batman Events API",
+  "name": "Batman Util API",
   "description": "",
   "authors": ["Batmanatorul"],
   "contact": {},
   "license": "lgpl-3.0",
   "mixins": [
-    "events.mixins.json"
   ],
   "environment": "*",
   "depends": {

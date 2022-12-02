@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "batmanlibs",
+  "id": "anvil-api",
   "version": "${version}",
 
   "name": "Batman Libs",
@@ -20,7 +20,6 @@
 
   "depends": {
     "fabricloader": ">=0.14.10",
-    "fabric": "*",
     "minecraft": "~1.19.2",
     "java": ">=17"
   },

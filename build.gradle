@@ -64,7 +64,7 @@ task buildIndividualJars(type: Copy) {
 
 	subprojects.each {from("${it.buildDir}/libs/${it.name}.jar")}
 
-	into "libs"
+	into "C:\\Users\\Eric\\Documents\\minecraft\\mods\\minesettlements-remade\\libs"
 }
 
 publishing {

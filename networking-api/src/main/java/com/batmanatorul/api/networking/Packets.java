@@ -1,4 +1,4 @@
-package com.batmanatorul.api.networking.impl;
+package com.batmanatorul.api.networking;
 
 import com.batmanatorul.api.networking.api.ExtendedPacketByteBuf;
 import com.batmanatorul.api.networking.interfaces.ClientPacketHandler;
@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
-public class PacketsImpl {
+public class Packets {
 
     private static final Map<Identifier, ClientPacketHandler> clientPackets = new HashMap<>();
     private static final Map<Identifier, ServerPacketHandler> serverPackets = new HashMap<>();

@@ -1,4 +1,4 @@
-package com.batmanatorul.api.networking.impl.channel;
+package com.batmanatorul.api.networking;
 
 import com.batmanatorul.api.networking.api.*;
 import com.batmanatorul.api.networking.interfaces.PacketSender;
@@ -12,15 +12,19 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.function.Function;
 
-public class SimpleNetworkChannelImpl implements SimpleNetworkChannel {
+public class SimpleNetworkChannel {
 
     private int ID = 0;
     private final Map<Integer, Function<ExtendedPacketByteBuf, Packet>> packets = new HashMap<>();
     private final Map<Class<? extends Packet>, Integer> ids = new HashMap<>();
     private final Identifier identifier;
 
-    public SimpleNetworkChannelImpl(Identifier identifier) {
+    protected SimpleNetworkChannel(Identifier identifier) {
         this.identifier = identifier;
+
+        if (!SimpleNetworkChannels.isNetworkHandler(identifier)) {
+            throw new IllegalStateException("Network Channel " + identifier + " has not been registered");
+        }
     }
 
     public Identifier getIdentifier() {

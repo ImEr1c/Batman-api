@@ -1,15 +1,19 @@
 {
   "schemaVersion": 1,
-  "id": "batman-events-api",
+  "id": "batman-nbt-api",
   "version": "${version}",
-  "name": "Batman Events API",
+  "name": "Batman NBT API",
   "description": "",
   "authors": ["Batmanatorul"],
   "contact": {},
   "license": "lgpl-3.0",
   "mixins": [
-    "events.mixins.json"
   ],
+  "entrypoints": {
+    "main": [
+      "com.batmanatorul.api.nbt.NbtApi"
+    ]
+  },
   "environment": "*",
   "depends": {
     "fabricloader": ">=0.14.10",

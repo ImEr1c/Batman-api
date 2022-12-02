@@ -9,7 +9,11 @@ pluginManagement {
     }
 }
 
-rootProject.name = "Batman-api"
+rootProject.name = "Anvil-api"
+
 include 'events-api'
 include 'networking-api'
 include 'registries-api'
+include 'nbt-api'
+include 'util-api'
+include 'extensions-api'

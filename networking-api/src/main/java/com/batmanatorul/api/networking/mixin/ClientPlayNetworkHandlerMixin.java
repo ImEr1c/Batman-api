@@ -2,9 +2,9 @@ package com.batmanatorul.api.networking.mixin;
 
 import com.batmanatorul.api.networking.api.ClientPacket;
 import com.batmanatorul.api.networking.api.ExtendedPacketByteBuf;
-import com.batmanatorul.api.networking.impl.PacketsImpl;
-import com.batmanatorul.api.networking.impl.SimpleNetworkChannelsImpl;
-import com.batmanatorul.api.networking.impl.channel.SimpleNetworkChannelImpl;
+import com.batmanatorul.api.networking.Packets;
+import com.batmanatorul.api.networking.SimpleNetworkChannels;
+import com.batmanatorul.api.networking.SimpleNetworkChannel;
 import com.batmanatorul.api.networking.interfaces.PacketSender;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayNetworkHandler;
@@ -30,12 +30,12 @@ public abstract class ClientPlayNetworkHandlerMixin implements PacketSender {
     public void receive(CustomPayloadS2CPacket packet, CallbackInfo ci) {
         Identifier channel = packet.getChannel();
 
-        if (SimpleNetworkChannelsImpl.isNetworkHandler(channel)) {
+        if (SimpleNetworkChannels.isNetworkHandler(channel)) {
             ExtendedPacketByteBuf buf = ExtendedPacketByteBuf.fromPacketByteBuf(packet.getData());
 
             int packetId = buf.readVarInt();
 
-            SimpleNetworkChannelImpl networkChannel = SimpleNetworkChannelsImpl.getNetworkChannel(channel);
+            SimpleNetworkChannel networkChannel = SimpleNetworkChannels.getNetworkChannel(channel);
 
             com.batmanatorul.api.networking.api.Packet p = networkChannel.fromBytes(packetId, buf);
 
@@ -44,10 +44,10 @@ public abstract class ClientPlayNetworkHandlerMixin implements PacketSender {
             ci.cancel();
         }
 
-        if (PacketsImpl.isStaticPacket(channel)) {
+        if (Packets.isStaticPacket(channel)) {
             ExtendedPacketByteBuf buf = ExtendedPacketByteBuf.fromPacketByteBuf(packet.getData());
 
-            PacketsImpl.handleClientPacket(channel, buf, client);
+            Packets.handleClientPacket(channel, buf, client);
 
             ci.cancel();
         }
