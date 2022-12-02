@@ -7,13 +7,6 @@
   "authors": ["Batmanatorul"],
   "contact": {},
   "license": "lgpl-3.0",
-  "mixins": [
-  ],
-  "entrypoints": {
-    "main": [
-      "com.batmanatorul.api.nbt.NbtApi"
-    ]
-  },
   "environment": "*",
   "depends": {
     "fabricloader": ">=0.14.10",

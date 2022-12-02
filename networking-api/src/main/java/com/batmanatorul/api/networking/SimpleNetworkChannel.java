@@ -21,10 +21,6 @@ public class SimpleNetworkChannel {
 
     protected SimpleNetworkChannel(Identifier identifier) {
         this.identifier = identifier;
-
-        if (!SimpleNetworkChannels.isNetworkHandler(identifier)) {
-            throw new IllegalStateException("Network Channel " + identifier + " has not been registered");
-        }
     }
 
     public Identifier getIdentifier() {

@@ -7,10 +7,6 @@ import java.util.function.Supplier;
 public class NbtSerializersRegistry {
     private static final Map<Class<?>, Supplier<?>> serializers = new HashMap<>();
 
-    public static void init() {
-        register(Test.class, Test::new);
-    }
-
     public static<A extends INbtSerializer> void register(Class<A> clazz, Supplier<A> clazzSupplier) {
         serializers.put(clazz, clazzSupplier);
     }
