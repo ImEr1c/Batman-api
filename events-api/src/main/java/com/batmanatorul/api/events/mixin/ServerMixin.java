@@ -1,6 +1,6 @@
 package com.batmanatorul.api.events.mixin;
 
-import com.batmanatorul.api.events.ServerEvents;
+import com.batmanatorul.api.events.events.ServerEvents;
 import com.batmanatorul.api.events.Events;
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
