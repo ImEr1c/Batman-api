@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "batman-extensions-api",
+  "id": "imer1c-extensions-api",
   "version": "${version}",
-  "name": "Batman Extensions API",
+  "name": "ImEr1c Extensions API",
   "description": "",
-  "authors": ["Batmanatorul"],
+  "authors": ["ImEr1c"],
   "contact": {},
   "license": "lgpl-3.0",
   "mixins": [

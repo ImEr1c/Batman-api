@@ -22,7 +22,7 @@ allprojects {
 		it.options.release = 17
 	}
 
-	group = "com.batmanatorul.api"
+	group = "com.imer1c.api"
 
 	dependencies {
 		minecraft "com.mojang:minecraft:${project.minecraft_version}"

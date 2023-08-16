@@ -9,7 +9,7 @@ pluginManagement {
     }
 }
 
-rootProject.name = "Anvil-api"
+rootProject.name = "ImEr1c-api"
 
 include 'events-api'
 include 'networking-api'

@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "batman-registries-api",
+  "id": "imer1c-registries-api",
   "version": "${version}",
-  "name": "Batman Registries API",
+  "name": "ImEr1c Registries API",
   "description": "",
-  "authors": ["Batmanatorul"],
+  "authors": ["ImEr1c"],
   "contact": {},
   "license": "lgpl-3.0",
   "environment": "*",

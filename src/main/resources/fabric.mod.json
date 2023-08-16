@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "anvil-api",
+  "id": "imer1c-api",
   "version": "${version}",
 
-  "name": "Batman Libs",
+  "name": "ImEr1c Libs",
   "description": "Libraries and apis used in my mods",
   "authors": [
-    "Batmanatorul"
+    "ImEr1c"
   ],
   "contact": {
     "homepage": "",
@@ -14,7 +14,7 @@
   },
 
   "license": "lgpl-3.0",
-  "icon": "assets/batmanlibs/icon.png",
+  "icon": "assets/imer1clibs/icon.png",
 
   "environment": "*",
 

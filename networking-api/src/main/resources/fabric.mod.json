@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "batman-networking-api",
+  "id": "imer1c-networking-api",
   "version": "${version}",
-  "name": "Batman Networking API",
+  "name": "ImEr1c Networking API",
   "description": "",
-  "authors": ["Batmanatorul"],
+  "authors": ["ImEr1c"],
   "contact": {},
   "license": "lgpl-3.0",
   "environment": "*",

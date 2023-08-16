@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "batman-events-api",
+  "id": "imer1c-events-api",
   "version": "${version}",
-  "name": "Batman Events API",
+  "name": "ImEr1c Events API",
   "description": "",
-  "authors": ["Batmanatorul"],
+  "authors": ["ImEr1c"],
   "contact": {},
   "license": "lgpl-3.0",
   "mixins": [
